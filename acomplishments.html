@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>KPI Dashboard</title>
+    <link rel="icon" type="image/x-icon" href="images/kpi.png">
+
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://use.fontawesome.com/9a027ca077.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid p-0">
+      <div class="row">
+        <nav class="navbar navbar-expand-lg navbar-dark navb">
+          <div class="container-fluid row">
+            <div class="col-3 d-flex">
+              <img src="images/kpi.png" class="mt-1 me-3 h-50" alt="">
+              <p><a class="navbar-brand" href="#">KPI Dashboard</a> <br>
+              <small class="text-white">CDO • IOF • Billing Team</small></p>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            </div>
+            <div class="collapse navbar-collapse col-5" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 col d-flex justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link"  href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="acomplishments.html">Accomplishments</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="summary.html">Summary</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="myteam.html">My Team</a>
+                </li>
+              </ul>
+              <form class="d-flex col-4">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Add Accom Modal -->
+        <div class="modal fade" id="accomModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header purpl">
+                <h5 class="modal-title" id="exampleModalLabel">Add Accomplishment</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form action="row d-flex justify-content-center ">
+                  <div>
+                    <label class="col-3" for="">Accomplishment</label>
+                    <input class="col-8" type="text" >
+                  </div>
+                  
+                  <div class="mt-2">
+                    <label class="col-3" for="">Notes</label>
+                    <input class="col-8" type="text" >  
+                  </div>
+                  
+                  <div class="mt-2">
+                    <label class="col-3" for="">Accomplishment Type</label>
+                    <input class="col-8" type="text" >
+                  </div>
+                  
+                  <div class="mt-2">
+                    <label class="col-3" for="">Application</label>
+                    <input class="col-8" type="text" >  
+                  </div>
+                  
+                </form>
+              </div>
+              <div class="modal-footer purpl">
+                <button type="button" class="btn btn-success btn-sm">Add Accomplishment</button>
+                <button type="button" class="btn btn-danger btn-sm" data-bs-dismiss="modal">Cancel</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal to Convert Points-->
+        <div class="modal fade" id="convertModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header purpl">
+                <h5 class="modal-title" id="exampleModalLabel">Convert Points</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="d-flex row justify-content-center text-center p-2">
+                  <div class="row border border-dark">
+                    <div class="col mt-1">
+                      <img class="icon2" src="images/lazada.PNG" alt="">
+                    </div>
+                    <div class="col mt-3">
+                      <label class="align-self-bottom">Lazada</label> 
+                    </div>
+                    <div class="col mt-3">
+                      <p>Points needed: 5</p> 
+                    </div>
+                    <div class="col mt-2 pt-1">
+                      <button class="btn btn-sm btn-primary">Claim</button>
+                    </div>
+                  </div>
+                  <div class="row mt-1 border rounded border-dark"> 
+                    <div class="col mt-2">
+                      <img class="icon2" src="images/share.PNG" alt="">
+                    </div>
+                    <div class="col mt-3">
+                      <p>Share Treats</p> 
+                    </div>
+                    <div class="col mt-3">
+                      <p>Points needed: 10</p>  
+                    </div>
+                    <div class="col mt-2 pt-1">
+                      <button class="btn btn-sm btn-primary">Claim</button>
+                    </div>
+                  </div>
+                  <div class="row mt-1 border rounded border-dark"> 
+                    <div class="col mt-1">
+                      <img class="icon2" src="images/grab.PNG" alt="">
+                    </div>
+                    <div class="col mt-3">
+                      <p>Grab Food</p>
+                    </div>
+                    <div class="col mt-3">
+                      <p>Points needed: 6</p>  
+                    </div>
+                    <div class="col mt-2 pt-1">
+                      <button class="btn btn-sm btn-primary">Claim</button>
+                    </div>
+                  </div>
+                  <div class="row mt-1 border rounded border-dark"> 
+                    <div class="col mt-1">
+                      <img class="icon2" src="images/cash.PNG" alt="">
+                    </div>
+                    <div class="col mt-3">
+                      <p>Cash</p>
+                    </div>
+                    <div class="col mt-3">
+                      <p>Points needed: 100</p>  
+                    </div>
+                    <div class="col mt-2 pt-1">
+                      <button class="btn btn-sm btn-primary">Claim</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer purpl">
+                <button type="button" class="btn btn-danger btn-sm" data-bs-dismiss="modal">Cancel</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container row justify-content-center p-3">
+          <div class="text-end">
+            <!-- Button trigger modal Add Accom-->
+            <button type="button" class="btn btn-sm btn-success animate__animated animate__pulse" data-bs-toggle="modal" data-bs-target="#accomModal">
+              <i class="fa fa-plus me-2" aria-hidden="true"></i>
+              Add Accomplishment
+            </button>
+
+            <!-- Button trigger modal Convert Points-->
+            <button type="button" class="btn btn-sm btn-primary animate__animated animate__pulse" data-bs-toggle="modal" data-bs-target="#convertModal">
+              <i class="fa fa-exchange me-2" aria-hidden="true"></i>
+              Convert Points
+            </button>
+
+          </div>
+          <div class="container-fluid row">
+            <div> 
+              <table class="mt-2 table table-sm shdw animate__animated animate__fadeIn">
+                <thead class="purpl">
+                  <tr>
+                    <th class="col">#</th>
+                    <th class="col">Date</th>
+                    <th class="col">Accomplishment</th>
+                    <th class="col">Type</th>
+                    <th class="col">Notes</th>
+                    <th class="col">Points Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th class="col-1">1</th>
+                    <td class="col-1">Date 1</td>
+                    <td class="col-3">Activity 1</td>
+                    <td class="col-2">Type 1</td>
+                    <td class="col-3">Notes 1</td>
+                    <td class="col-2">Converted</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Date 2</td>
+                    <td>Activity 2</td>
+                    <td>Type 2</td>
+                    <td>Notes 2</td>
+                    <td>Convertible</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Date 3</td>
+                    <td>Activity 3</td>
+                    <td>Type 3</td>
+                    <td>Notes 3</td>
+                    <td>Converted</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>Date 4</td>
+                    <td>Activity 4</td>
+                    <td>Type 4</td>
+                    <td>Notes 4</td>
+                    <td>Converted</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td>Date 5</td>
+                    <td>Activity 5</td>
+                    <td>Type 5</td>
+                    <td>Notes 5</td>
+                    <td>Converted</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">6</th>
+                    <td>Date 6</td>
+                    <td>Activity 6</td>
+                    <td>Type 6</td>
+                    <td>Notes 6</td>
+                    <td>Converted</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">7</th>
+                    <td>Date 7</td>
+                    <td>Activity 7</td>
+                    <td>Type 7</td>
+                    <td>Notes 7</td>
+                    <td>Convertible</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">8</th>
+                    <td>Date 8</td>
+                    <td>Activity 8</td>
+                    <td>Type 8</td>
+                    <td>Notes 8</td>
+                    <td>Convertible</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">9</th>
+                    <td>Date 9</td>
+                    <td>Activity 9</td>
+                    <td>Type 9</td>
+                    <td>Notes 9</td>
+                    <td>Convertible</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">10</th>
+                    <td>Date 10</td>
+                    <td>Activity 10</td>
+                    <td>Type 10</td>
+                    <td>Notes 10</td>
+                    <td>Convertible</td>
+                  </tr>
+                </tbody>
+              </table>
+              <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                  <li class="page-item disabled">
+                    <a class="page-link">Previous</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

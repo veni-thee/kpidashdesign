@@ -1,0 +1,31 @@
+.navb{
+  background-color: #49166d;
+}
+
+.shdw{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.icon{
+width: 5em;
+}
+
+.icon2{
+  width: 8em;
+}
+
+.sumry{
+  background-color: #49166d;
+  color: white;
+  font-size: large;
+}
+
+.beba{
+  font-family: 'Bebas Neue', cursive;
+  font-size: xx-large;
+}
+
+.purpl{
+  background-color: #d4b7e9;
+}
+
