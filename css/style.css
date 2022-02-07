@@ -29,3 +29,22 @@ width: 4em;
   background-color: #d4b7e9;
 }
 
+.accom{
+  box-shadow: 0 4px 8px 0 rgba(102, 204, 0, 0.2), 0 6px 20px 0 rgba(102, 204, 0, 0.19);
+  border-radius: 2em;
+  align-items: center;
+}
+
+.accomdiv{
+  border-radius: 50%;
+  padding: .2em;
+  width: 4em;
+}
+
+.accomimg{
+  height: 3em;
+}
+
+.accosm{
+  font-size: small;
+}
