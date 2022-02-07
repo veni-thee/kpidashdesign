@@ -18,16 +18,27 @@
   <body>
     <div class="container-fluid p-0"> <!-- div for the 2 ent content -->
         <nav class="navbar navbar-expand-lg navbar-dark navb">
-          <div class="container-fluid row">
-            <div class="col-3 d-flex">
-              <img src="images/kpi.png" class="mt-1 me-3 h-50" alt="">
-              <p><a class="navbar-brand" href="#">KPI Dashboard</a> <br>
-              <small class="text-white">CDO • IOF • Billing Team</small></p>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+          <div class="container-fluid row d-flex">
+
+            <div class="col-12 col-sm-5 d-flex">
+              <div class="col-2 mt-1 text-center">
+                <img src="images/kpi.png" class="mt-1 me-3" alt="">
+              </div>
+              <div class="col-9">
+                <div class="row">
+                  <a class="navbar-brand" href="#"><p>KPI Dashboard</a><br>
+                  <small class="text-white">CDO • IOF • Billing Team</small></p>
+                </div>
+              </div>
+
+              <div class="col-1">
+                <button class="navbar-toggler mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              </div>
             </div>
-            <div class="collapse navbar-collapse col-5" id="navbarSupportedContent">
+            
+            <div class="collapse navbar-collapse col-12 col-sm-6" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0 col d-flex justify-content-end">
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="index.html">Home</a>
@@ -38,15 +49,13 @@
                 <li class="nav-item">
                   <a class="nav-link" href="summary.html">Summary</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="myteam.html">My Team</a>
-                </li>
               </ul>
-              <form class="d-flex col-4">
+              <form class="d-flex col-8 col-sm-4">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-light" type="submit">Search</button>
               </form>
             </div>
+
           </div>
         </nav>
 
