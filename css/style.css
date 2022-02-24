@@ -136,3 +136,32 @@ width: 4em;
     right: 35px;
   }
 }
+
+/* Style tab links */
+.tablink {
+  background-color: gray;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: black;
+  display: none;
+
+  height: 100%;
+}
+
+/* #Values {background-color: green;}
+#Objectives {background-color: blue;}
+#Summary {background-color: orange;} */
