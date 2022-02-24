@@ -22,10 +22,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class="container-fluid p-0">
+    <div class="container-fluid p-0"> 
       <nav class="navbar navbar-expand-lg navbar-dark navb">
         <div class="container-fluid row d-flex">
-
           <div class="col-12 col-md-6 col-sm-10 d-flex">
             <div class="col-2 mt-1 text-center">
               <img src="images/kpi.png" class="mt-1 me-3" alt="">
@@ -67,6 +66,9 @@
 
         <div class="container-fluid">
           <div class="row mt-1 ms-4 beba"><h2>Performance Summary</h2></div>
+          <div class="ms-4 ps-1 mt-1">
+            <h5>Team Member Name and (Workday ID)</h5>
+          </div>
             <div class="dropdown ms-5">
               <button class="btn btn-sm btn-dark dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                 Pick a Reporting Period
@@ -78,454 +80,400 @@
               </ul>
             </div>
           
-          <div class="ms-4 ps-1 mt-3">
-            <h5>Team Member Name and (Workday ID)</h5>
+          
+          
+
+         <div class="mt-3 row justify-content-center">
+          <button class="tablink" onclick="openPage('Values', this, 'green')" id="defaultOpen">TELUS Values</button>
+          <button class="tablink" onclick="openPage('Objectives', this, 'blue')">Team Objectives</button>
+          <button class="tablink" onclick="openPage('Summary', this, 'orange')">Performance Summary</button>
+
+          <div id="Values" class="tabcontent">
+            <div class="mt-3">
+              <h3 class="text-center">TELUS Values</h3>
+            </div>
+            <table class="lh-1 table table-light table-sm table-bordered table-hover">
+              <thead>
+                <tr class="table-success">
+                  <th>Activity</th>
+                  <th class="col text-center"scope="col">Jan</th>
+                  <th class="col text-center"scope="col">Feb</th>
+                  <th class="col text-center"scope="col">Mar</th>
+                  <th class="col text-center"scope="col">Apr</th>
+                  <th class="col text-center"scope="col">May</th>
+                  <th class="col text-center"scope="col">Jun</th>
+                  <th class="col text-center"scope="col">Jul</th>
+                  <th class="col text-center"scope="col">Aug</th>
+                  <th class="col text-center"scope="col">Sep</th>
+                  <th class="col text-center"scope="col">Oct</th>
+                  <th class="col text-center"scope="col">Nov</th>
+                  <th class="col text-center"scope="col">Dec</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th colspan="13" scope="row" class="text-start">We embrace change and initiate opportunity.</th>
+                </tr>
+                <tr>
+                  <td><p class="ms-2 mb-1">• Awardee</p></td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                </tr>
+                <tr>
+                  <th colspan="13" scope="row" class="text-start">We have a passion for growth.</th>
+                </tr>
+                <tr>
+                  <td><p class="ms-2 mb-1">• Training</p></td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                </tr>
+                <tr>
+                  <th colspan="13" scope="row" class="text-start">We believe in spirited teamwork.</th>
+                </tr>
+                <tr>
+                  <td><p class="ms-2 mb-1">• Meeting</p></td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                </tr>
+                <tr>
+                  <th colspan="13" scope="row" class="text-start">We have the courage to innovate.</th>
+                </tr>
+                <tr>
+                  <td><p class="ms-2 mb-1">• Project</p></td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                </tr>
+              
+              </tbody>
+            </table>
           </div>
-          <div class="text-center fw-bold lh-1">
-            <small>TELUS International Philippines | CDO | DevOps | IOF | Billing</small>
+
+          <div id="Objectives" class="tabcontent">
+            <div class="mt-3">
+              <h3 class="text-center">Team Objectives</h3>
+            </div>
+            <table class="lh-1 table table-light table-sm table-bordered table-hover">
+              <thead>
+                <tr class="table-success">
+                  <th class="col-2">Activity</th>
+                  <th class="col text-center"scope="col">Jan</th>
+                  <th class="col text-center"scope="col">Feb</th>
+                  <th class="col text-center"scope="col">Mar</th>
+                  <th class="col text-center"scope="col">Apr</th>
+                  <th class="col text-center"scope="col">May</th>
+                  <th class="col text-center"scope="col">Jun</th>
+                  <th class="col text-center"scope="col">Jul</th>
+                  <th class="col text-center"scope="col">Aug</th>
+                  <th class="col text-center"scope="col">Sep</th>
+                  <th class="col text-center"scope="col">Oct</th>
+                  <th class="col text-center"scope="col">Nov</th>
+                  <th class="col text-center"scope="col">Dec</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th colspan="13" scope="row" class="text-start">Increase Team Engagement (25%)</th>
+                </tr>
+                <tr>
+                  <td><p class="ms-2 mb-1">• Meeting</p></td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                </tr>
+                <tr>
+                  <td><p class="ms-2 mb-1">• Skills</p></td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                </tr>
+                <tr>
+                  <td><p class="ms-2 mb-1">• Training</p></td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                </tr>
+                <tr>
+                  <th colspan="13" scope="row" class="text-start">Grow Revenue and EBITDA (15%)</th>
+                </tr>
+                <tr>
+                  <td><p class="ms-2 mb-1">• Project</p></td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                </tr>
+                <tr>
+                  <th colspan="13" scope="row" class="text-start">Deliver Operational Excellence (60%)</th>
+                </tr>
+                <tr>
+                  <td><p class="ms-2 mb-1">• Ad Hoc</p></td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                </tr>
+                <tr>
+                  <td><p class="ms-2 mb-1">• Awardee</p></td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                </tr>
+                <tr>
+                  <td><p class="ms-2 mb-1">• Bravo Card</p></td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                </tr>
+                <tr>
+                  <td><p class="ms-2 mb-1">• Defect/CRQ</p></td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                </tr>
+                <tr>
+                  <td><p class="ms-2 mb-1">• JIRA Task</p></td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                </tr>
+                <tr>
+                  <td><p class="ms-2 mb-1">• Task</p></td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                  <td class="text-center">points</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
 
-          <!-- <button class="btn btn-sm btn-outline-success">
-            <i class="fa duotone fa-check"></i>
-            Approved
-          </button>
-
-          <button class="btn btn-sm btn-outline-danger">
-            <i class="fa solid fa-ban"></i>
-            Rejected
-          </button>
-
-          <button class="btn btn-sm btn-outline-primary">
-            <i class="fa fa-exchange me-2" aria-hidden="true"></i>
-            Convertible
-          </button>
-
-          <button class="btn btn-sm btn-outline-warning">
-            <i class="fa solid fa-hourglass-start"></i>
-            Pending
-          </button> -->
-
-          <div class="row justify-content-center g-0">
-            <!-- Use any element to open/show the overlay navigation menu -->
-            <img class="valicn p-2 m-3 mt-5" src="images/values_icon.png" alt="" data-bs-toggle="tooltip" data-bs-placement="bottom" title="TELUS Values" onclick="openNav1()">          
-              <!-- Telus Values Overlay -->
-              <div id="myNav1" class="overlay">
-
-                <!-- Button to close the overlay navigation -->
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
-
-                <!-- Overlay content -->
-                <div class="overlay-content">
-                    <div>
-                      <h3 class="text-center text-white">TELUS Values</h3>
+          <div id="Summary" class="tabcontent">
+            <div class="mt-3 card shdw animate__animated animate__fadeIn">
+              <div class="card-body">
+                <div class="text-center">       
+                <h5 class="mt-4">
+                  <img class="icon"src="images/summary.png" alt="">
+                  Performance Summary
+                </h5>
+                <p>Reporting Period: Enter Year</p>
+                <h6 class="card-title">Team Member Name<br>(Workday ID)</h6>
+                <h6 class="card-subtitle mb-2 text-muted">Job Title</h6>
+                </div>
+                <div class="ms-5 mb-4 mt-3 me-5">
+                  <div class="sumry">
+                    <div class="row d-flex">
+                      <i class="col-1 fa fa-heartbeat align-self-center text-center" aria-hidden="true"></i>
+                      <h5 class="col card-text">TELUS Values</h5>
                     </div>
-                    <table class="lh-1 table table-light table-sm table-bordered table-hover">
-                      <thead>
-                        <tr class="table-success">
-                          <th>Activity</th>
-                          <th class="col text-center"scope="col">Jan</th>
-                          <th class="col text-center"scope="col">Feb</th>
-                          <th class="col text-center"scope="col">Mar</th>
-                          <th class="col text-center"scope="col">Apr</th>
-                          <th class="col text-center"scope="col">May</th>
-                          <th class="col text-center"scope="col">Jun</th>
-                          <th class="col text-center"scope="col">Jul</th>
-                          <th class="col text-center"scope="col">Aug</th>
-                          <th class="col text-center"scope="col">Sep</th>
-                          <th class="col text-center"scope="col">Oct</th>
-                          <th class="col text-center"scope="col">Nov</th>
-                          <th class="col text-center"scope="col">Dec</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <th colspan="13" scope="row" class="text-start">We embrace change and initiate opportunity.</th>
-                        </tr>
-                        <tr>
-                          <td><p class="ms-2 mb-1">• Awardee</p></td>
-                          <td class="text-center">points</td>
-                          <td class="text-center">points</td>
-                          <td class="text-center">points</td>
-                          <td class="text-center">points</td>
-                          <td class="text-center">points</td>
-                          <td class="text-center">points</td>
-                          <td class="text-center">points</td>
-                          <td class="text-center">points</td>
-                          <td class="text-center">points</td>
-                          <td class="text-center">points</td>
-                          <td class="text-center">points</td>
-                          <td class="text-center">points</td>
-                        </tr>
-                        <tr>
-                          <th colspan="13" scope="row" class="text-start">We have a passion for growth.</th>
-                        </tr>
-                        <tr>
-                          <td><p class="ms-2 mb-1">• Training</p></td>
-                          <td class="text-center">points</td>
-                          <td class="text-center">points</td>
-                          <td class="text-center">points</td>
-                          <td class="text-center">points</td>
-                          <td class="text-center">points</td>
-                          <td class="text-center">points</td>
-                          <td class="text-center">points</td>
-                          <td class="text-center">points</td>
-                          <td class="text-center">points</td>
-                          <td class="text-center">points</td>
-                          <td class="text-center">points</td>
-                          <td class="text-center">points</td>
-                        </tr>
-                        <tr>
-                          <th colspan="13" scope="row" class="text-start">We believe in spirited teamwork.</th>
-                        </tr>
-                        <tr>
-                          <td><p class="ms-2 mb-1">• Meeting</p></td>
-                          <td class="text-center">points</td>
-                          <td class="text-center">points</td>
-                          <td class="text-center">points</td>
-                          <td class="text-center">points</td>
-                          <td class="text-center">points</td>
-                          <td class="text-center">points</td>
-                          <td class="text-center">points</td>
-                          <td class="text-center">points</td>
-                          <td class="text-center">points</td>
-                          <td class="text-center">points</td>
-                          <td class="text-center">points</td>
-                          <td class="text-center">points</td>
-                        </tr>
-                        <tr>
-                          <th colspan="13" scope="row" class="text-start">We have the courage to innovate.</th>
-                        </tr>
-                        <tr>
-                          <td><p class="ms-2 mb-1">• Project</p></td>
-                          <td class="text-center">points</td>
-                          <td class="text-center">points</td>
-                          <td class="text-center">points</td>
-                          <td class="text-center">points</td>
-                          <td class="text-center">points</td>
-                          <td class="text-center">points</td>
-                          <td class="text-center">points</td>
-                          <td class="text-center">points</td>
-                          <td class="text-center">points</td>
-                          <td class="text-center">points</td>
-                          <td class="text-center">points</td>
-                          <td class="text-center">points</td>
-                        </tr>
-                      
-                      </tbody>
-                    </table>
                   </div>
-              </div> <!-- End of Telus Values Overlay -->
+                  <div class="row d-flex mt-2 lh-sm">
+                    <p class="row ms-5 pb-0 fw-bold"> 
+                      We embrace change and initiate opportunity.</p>
+                    <i class="col-1 mt-1 ms-5 fa fa-check-square-o text-end" aria-hidden="true"></i>
+                    <p class="col">Team Member has completed X number of task.</p>
+                  </div>
 
-                  <!-- Team Objectives -->
-                  <img class="objicn p-2 m-3 mt-5" src="images/objectives_icon.png" alt="" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Team Objectives" onclick="openNav2()">
-                  
-                  <!-- Team Objectives Overlay -->
-                  <div id="myNav2" class="overlay">
+                  <div class="row d-flex mt-2 lh-sm">
+                    <p class="row ms-5 pb-0 fw-bold">
+                      We have a passion for growth.</p>
+                    <i class="col-1 mt-1 ms-5 fa fa-check-square-o text-end" aria-hidden="true"></i>
+                    <p class="col">Team Member has completed X number of task.</p>
+                  </div>
 
-                    <!-- Button to close the overlay navigation -->
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
+                  <div class="row d-flex mt-2 lh-sm">
+                    <p class="row ms-5 pb-0 fw-bold"> 
+                      We believe in spirited teamwork.</p>
+                    <i class="col-1 mt-1 ms-5 fa fa-check-square-o text-end" aria-hidden="true"></i> 
+                    <p class="col">Team Member has completed X number of task.</p>
+                  </div>
 
-                    <!-- Team Objectives content -->
-                    <div class="overlay-content">
-                        <div>
-                          <h3 class="text-center text-white">Team Objectives</h3>
-                        </div>
-                        <div class="">
-                        <table class="lh-1 table table-light table-sm table-bordered table-hover">
-                          <thead>
-                            <tr class="table-success">
-                              <th class="col-2">Activity</th>
-                              <th class="col text-center"scope="col">Jan</th>
-                              <th class="col text-center"scope="col">Feb</th>
-                              <th class="col text-center"scope="col">Mar</th>
-                              <th class="col text-center"scope="col">Apr</th>
-                              <th class="col text-center"scope="col">May</th>
-                              <th class="col text-center"scope="col">Jun</th>
-                              <th class="col text-center"scope="col">Jul</th>
-                              <th class="col text-center"scope="col">Aug</th>
-                              <th class="col text-center"scope="col">Sep</th>
-                              <th class="col text-center"scope="col">Oct</th>
-                              <th class="col text-center"scope="col">Nov</th>
-                              <th class="col text-center"scope="col">Dec</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <th colspan="13" scope="row" class="text-start">Increase Team Engagement (25%)</th>
-                            </tr>
-                            <tr>
-                              <td><p class="ms-2 mb-1">• Meeting</p></td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                            </tr>
-                            <tr>
-                              <td><p class="ms-2 mb-1">• Skills</p></td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                            </tr>
-                            <tr>
-                              <td><p class="ms-2 mb-1">• Training</p></td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                            </tr>
-                            <tr>
-                              <th colspan="13" scope="row" class="text-start">Grow Revenue and EBITDA (15%)</th>
-                            </tr>
-                            <tr>
-                              <td><p class="ms-2 mb-1">• Project</p></td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                            </tr>
-                            <tr>
-                              <th colspan="13" scope="row" class="text-start">Deliver Operational Excellence (60%)</th>
-                            </tr>
-                            <tr>
-                              <td><p class="ms-2 mb-1">• Ad Hoc</p></td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                            </tr>
-                            <tr>
-                              <td><p class="ms-2 mb-1">• Awardee</p></td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                            </tr>
-                            <tr>
-                              <td><p class="ms-2 mb-1">• Bravo Card</p></td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                            </tr>
-                            <tr>
-                              <td><p class="ms-2 mb-1">• Defect/CRQ</p></td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                            </tr>
-                            <tr>
-                              <td><p class="ms-2 mb-1">• JIRA Task</p></td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                            </tr>
-                            <tr>
-                              <td><p class="ms-2 mb-1">• Task</p></td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                              <td class="text-center">points</td>
-                            </tr>
-                          </tbody>
-                        </table>
-                        </div>
-                    </div> <!-- End of Team Objectives content -->
-                  </div> <!-- End of Team Objectives Overlay -->
+                  <div class="row d-flex mt-2 lh-sm">
+                    <p class="row ms-5 pb-0 fw-bold"> 
+                      We have the courage to innovate.</p>
+                    <i class="col-1 mt-1 ms-5 fa fa-check-square-o text-end" aria-hidden="true"></i> 
+                    <p class="col">Team Member has completed X number of task.</p>
+                  </div>
 
-                  <!-- Performance Summary -->
-                  <img class="sumicns p-2 m-3 mt-5" src="images/summary_icon.png" alt="" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Performance Summary" onclick="openNav3()">
+                  <div class="sumry">
+                    <div class="row d-flex mt-2">
+                      <i class="col-1 fa fa-line-chart align-self-center text-center" aria-hidden="true"></i>
+                      <h5 class="col card-text">Team Objectives</h5>
+                    </div>
+                  </div>
 
-                  <!-- Performance Summary Overlay -->
-                  <div id="myNav3" class="overlay">
+                  <div class="row d-flex mt-2 lh-sm">
+                    <p class="row ms-5 pb-0 fw-bold"> 
+                      Increase Team Engagement (25%)</p>
+                    <i class="col-1 mt-1 ms-5 fa fa-check-square-o text-end" aria-hidden="true"></i> 
+                    <p class="col">Team Member has participated in X number of activities.</p>
+                  </div>
 
-                    <!-- Button to close the overlay navigation -->
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav3()">&times;</a>
+                  <div class="row d-flex mt-2 lh-sm">
+                    <p class="row ms-5 pb-0 fw-bold"> 
+                      Grow Revenue and EBITDA (15%)</p>
+                    <i class="col-1 mt-1 ms-5 fa fa-check-square-o text-end" aria-hidden="true"> </i>
+                    <p class="col">Team Member has participated in X number of activities.</p>
+                  </div>
 
-                    <!-- Performance Summary contents -->
-                    <div class="overlay-content">
-                      <div class="container d-flex justify-content-center mt-3">
-                        <div class="card shdw animate__animated animate__fadeIn">
-                          <div class="card-body">
-                            <div class="text-center">       
-                            <h5 class="mt-4">
-                              <img class="icon"src="images/summary.png" alt="">
-                              Performance Summary
-                            </h5>
-                            <p>Reporting Period: Enter Year</p>
-                            <h6 class="card-title">Team Member Name<br>(Workday ID)</h6>
-                            <h6 class="card-subtitle mb-2 text-muted">Job Title</h6>
-                            </div>
-                            <div class="ms-5 mb-4 mt-3 me-5">
-                              <div class="sumry">
-                                <div class="row d-flex">
-                                  <i class="col-1 fa fa-heartbeat align-self-center text-center" aria-hidden="true"></i>
-                                  <h5 class="col card-text">TELUS Values</h5>
-                                </div>
-                              </div>
-                              <div class="row d-flex mt-2 lh-sm">
-                                <p class="row ms-5 pb-0 fw-bold"> 
-                                  We embrace change and initiate opportunity.</p>
-                                <i class="col-1 mt-1 ms-5 fa fa-check-square-o text-end" aria-hidden="true"></i>
-                                <p class="col">Team Member has completed X number of task.</p>
-                              </div>
-            
-                              <div class="row d-flex mt-2 lh-sm">
-                                <p class="row ms-5 pb-0 fw-bold">
-                                  We have a passion for growth.</p>
-                                <i class="col-1 mt-1 ms-5 fa fa-check-square-o text-end" aria-hidden="true"></i>
-                                <p class="col">Team Member has completed X number of task.</p>
-                              </div>
-            
-                              <div class="row d-flex mt-2 lh-sm">
-                                <p class="row ms-5 pb-0 fw-bold"> 
-                                  We believe in spirited teamwork.</p>
-                                <i class="col-1 mt-1 ms-5 fa fa-check-square-o text-end" aria-hidden="true"></i> 
-                                <p class="col">Team Member has completed X number of task.</p>
-                              </div>
-            
-                              <div class="row d-flex mt-2 lh-sm">
-                                <p class="row ms-5 pb-0 fw-bold"> 
-                                  We have the courage to innovate.</p>
-                                <i class="col-1 mt-1 ms-5 fa fa-check-square-o text-end" aria-hidden="true"></i> 
-                                <p class="col">Team Member has completed X number of task.</p>
-                              </div>
-            
-                              <div class="sumry">
-                                <div class="row d-flex mt-2">
-                                  <i class="col-1 fa fa-line-chart align-self-center text-center" aria-hidden="true"></i>
-                                  <h5 class="col card-text">Team Objectives</h5>
-                                </div>
-                              </div>
-            
-                              <div class="row d-flex mt-2 lh-sm">
-                                <p class="row ms-5 pb-0 fw-bold"> 
-                                  Increase Team Engagement (25%)</p>
-                                <i class="col-1 mt-1 ms-5 fa fa-check-square-o text-end" aria-hidden="true"></i> 
-                                <p class="col">Team Member has participated in X number of activities.</p>
-                              </div>
-            
-                              <div class="row d-flex mt-2 lh-sm">
-                                <p class="row ms-5 pb-0 fw-bold"> 
-                                  Grow Revenue and EBITDA (15%)</p>
-                                <i class="col-1 mt-1 ms-5 fa fa-check-square-o text-end" aria-hidden="true"> </i>
-                                <p class="col">Team Member has participated in X number of activities.</p>
-                              </div>
-            
-                              <div class="row d-flex mt-2 lh-sm">
-                                <p class="row ms-5 pb-0 fw-bold"> 
-                                  Deliver Operational Excellence (60%)</p>
-                                <i class="col-1 mt-1 ms-5 fa fa-check-square-o text-end" aria-hidden="true"></i> 
-                                <p class="col">Team Member has participated in X number of activities.</p>
-                              </div>
-            
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- Download Performance Summary Button -->
-                      <div class="text-center mt-4 pb-5">
-                        <button class="card-link btn btn-sm btn-success" 
-                        onclick="window.print();">
-                          <i class="fa fa-download" aria-hidden="true"></i>
-                        Download PDF
-                      </button>
-                      </div>
-                    </div> <!-- End of Performance Summary contents -->
-                  </div> <!-- End of Performance Summary Overlay -->
+                  <div class="row d-flex mt-2 lh-sm">
+                    <p class="row ms-5 pb-0 fw-bold"> 
+                      Deliver Operational Excellence (60%)</p>
+                    <i class="col-1 mt-1 ms-5 fa fa-check-square-o text-end" aria-hidden="true"></i> 
+                    <p class="col">Team Member has participated in X number of activities.</p>
+                  </div>
 
                 </div>
+                <!-- Download Performance Summary Button -->
+                <div class="text-center mt-4 pb-5">
+                  <button class="card-link btn btn-sm btn-success" 
+                  onclick="window.print();">
+                    <i class="fa fa-download" aria-hidden="true"></i>
+                  Download PDF
+                </button>
+                </div>
+
+
               </div>
+            </div>
+          </div>
+          
 
-
-
-        
-
+    </div>
   </div>
 </div>
 
+<footer class="my-5">
+  <div class="text-center fw-bold lh-1">
+    <small>TELUS International Philippines | CDO | DevOps | IOF | Billing</small>
+  </div>
+</footer>
 
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
